@@ -87,3 +87,24 @@ Perspectivas para arquitetar software de qualidade
             - Circuito fechado (HTTP200,201...)
             - Circuito aberto (HTTP 500)
             - Meio aberto - Verifica se o sistema consegue responder as requisições e fica abrindo e fechando o circuito.
+
+        - API Gateway
+            É aqui que podemos fazer praticamente tudo que está descrito acima.
+
+        - Service mesh
+            Controlar o trafego da rede
+            Evita implementações de proteção pelo próprio sistema.
+            mTLS
+
+        - Comunicação assíncrona
+            Evita perda de dados
+            Message broker / sistema de stream
+
+        - Garantias de entrega com Retry
+            Exponential backoff - Jitter     
+
+    Quando pensamos em resiliência devemos pensar: 
+        - O que acontece se o sistema cair? 
+        - Haverá perda de informações/requisições ? 
+        - O sistema está fora do ar? 
+        - Como reiniciar o sistema? 
